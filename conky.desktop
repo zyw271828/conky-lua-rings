@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Conky
+Type=Application
+Exec=~/.conky/Rings/startconky.sh
+Terminal=false
+Icon=conky
+NoDisplay=false
+Categories=Utility;

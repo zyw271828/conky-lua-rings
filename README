@@ -1,0 +1,14 @@
+Conky script by Dragonias (http://yesthisisme.deviantart.com)
+
+The thing on my desktop are actually 4 separate Conkys (sorry): the main one with rings, and the 3 smaller ones: memory, CPU and notes. Use the startconky.sh script to start them. Put it into your session's application autostart to have them start automatically each time you log in. Don't forget to make it executable (either right-click, Properties, Permissions, Allow as executable/Allow as program, or in the terminal chmod a+x startconky.sh).
+
+Main conky: Requires clock_rings.lua to draw the clock and ring stats. Put the lua script e.g. into ~/bin/conky/clock_rings.lua (where ~ is your home folder, and bin is supposed to be your personal folder for scripts and such, and if you don't have it yet it is a good idea to create it).
+Also, the lines connecting the stat rings with their descriptions/more detailed info (and the email icon on the right) are actually drawn into the background, so you need to put them into yours. Open your background in the GIMP, open also the lines.png file that I've included, drag them (the layer) onto your background, and position it to the *top left* corner. (You may want to remove the black dots on the right used for email.) Save, set the new pic as your wallpaper, and the main conky is done =)
+
+Notes conky: This lists the content of file "~/notes.txt" (each line with a blue X to make it look like a todo list) using the viewnotes.sh script I included. All the script does is that it puts the blue X's at the beginning of the line :D If you want to use it, put the script somewhere like ~/bin/conky/viewnotes.sh and populate ~/notes.txt with some intelligent remarks.
+
+If you want a background terminal: install tilda using your package manager, put the config_0 file into ~/.tilda/ and uncomment the "tilda" line from the startconky.sh script.
+
+That should be everything, let me know if I forgot anything! :D
+
+Enjoy, experiment, share your results!
