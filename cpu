@@ -47,7 +47,7 @@ uppercase false
 default_color FFFFFF
  
 TEXT
-${font "WenQuanYi Micro Hei":size 12}CPU ${alignr}$cpu%${font}
+${font "Noto Sans CJK SC":size 12}CPU ${alignr}$cpu%${font}
 
 Load: ${alignr}${loadavg}
 Processes: ${alignr}${running_processes}/${processes}

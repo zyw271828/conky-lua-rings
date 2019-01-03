@@ -47,7 +47,7 @@ uppercase false
 default_color FFFFFF
  
 TEXT
-${font "WenQuanYi Micro Hei":size 12}RAM ${alignr}$memperc%${font}
+${font "Noto Sans CJK SC":size 12}RAM ${alignr}$memperc%${font}
 
 ${top_mem name 1} ${alignr}${top_mem mem 1}
 ${top_mem name 2} ${alignr}${top_mem mem 2}

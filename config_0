@@ -1,7 +1,7 @@
 tilda_config_version = "0.9.6"
 # image = ""
 # command = ""
-font = "WenQuanYi Micro Hei"
+font = "Noto Sans CJK SC"
 key = "F12"
 title = "DesktopConsole"
 background_color = "white"
