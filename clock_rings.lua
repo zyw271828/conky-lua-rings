@@ -143,13 +143,13 @@ settings_table = {
 		end_angle=85
 	},
 	{
-		name='',
+		name='cpu', -- dummy (used for arc)
 		arg='',
 		max=1,
 		bg_colour=0xd5dcde,
 		bg_alpha=1,
 		fg_colour=0xd5dcde,
-		fg_alpha=1,
+		fg_alpha=0,
 		x=160, y=155,
 		radius=120,
 		thickness=2,
@@ -157,13 +157,13 @@ settings_table = {
 		end_angle=105
 	},
 	{
-		name='',
+		name='cpu', -- dummy (used for arc)
 		arg='',
 		max=1,
 		bg_colour=0xffffff,
 		bg_alpha=1,
 		fg_colour=0xffffff,
-		fg_alpha=1,
+		fg_alpha=0,
 		x=160, y=155,
 		radius=403,
 		thickness=2,
