@@ -39,7 +39,7 @@ draw_graph_borders false
  
 # -- Text settings -- #
 use_xft true
-xftfont Santana:size=10
+xftfont "Noto Sans CJK SC":size=10
 xftalpha 0.8
  
 uppercase false
