@@ -20,5 +20,6 @@ if [ ! -d "$DIR" ]; then
   echo "Icon=conky" >> conky.desktop
   echo "Categories=System;Monitor;" >> conky.desktop
   cp ./conky.desktop ~/.config/autostart/
+  rm conky.desktop
   echo "Conky-lua-rings is now installed."
 fi
