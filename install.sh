@@ -9,7 +9,7 @@ if [ -d "$DIR" ]; then
 fi
 
 if [ ! -d "$DIR" ]; then
-  mkdir $DIR
+  mkdir -p $DIR
   cp -r ./* $DIR
   echo "[Desktop Entry]" > conky.desktop
   echo "Type=Application" >> conky.desktop
@@ -19,6 +19,7 @@ if [ ! -d "$DIR" ]; then
   echo "Terminal=false" >> conky.desktop
   echo "Icon=conky" >> conky.desktop
   echo "Categories=System;Monitor;" >> conky.desktop
+  mkdir -p ~/.config/autostart/
   cp ./conky.desktop ~/.config/autostart/
   rm conky.desktop
   echo "Conky-lua-rings is now installed."
