@@ -9,19 +9,25 @@ if [ -d "$DIR" ]; then
 fi
 
 if [ ! -d "$DIR" ]; then
-  mkdir -p $DIR
-  cp -r ./* $DIR
-  echo "[Desktop Entry]" > conky.desktop
-  echo "Type=Application" >> conky.desktop
-  echo "Name=Conky" >> conky.desktop
-  echo "Exec=$HOME/.conky-lua-rings/startconky.sh" >> conky.desktop
-  echo "StartupNotify=false" >> conky.desktop
-  echo "Terminal=false" >> conky.desktop
-  echo "Icon=conky" >> conky.desktop
-  echo "Categories=System;Monitor;" >> conky.desktop
+  command -v git >/dev/null 2>&1 || {
+    echo "Error: git is not installed."
+    exit 1
+  }
+  env git clone --depth=1 https://github.com/zyw271828/conky-lua-rings.git "$DIR" || {
+    echo "Error: git clone of conky-lua-rings failed."
+    exit 1
+  }
+  echo "[Desktop Entry]" > $DIR/conky.desktop
+  echo "Type=Application" >> $DIR/conky.desktop
+  echo "Name=Conky" >> $DIR/conky.desktop
+  echo "Exec=$DIR/startconky.sh" >> $DIR/conky.desktop
+  echo "StartupNotify=false" >> $DIR/conky.desktop
+  echo "Terminal=false" >> $DIR/conky.desktop
+  echo "Icon=conky" >> $DIR/conky.desktop
+  echo "Categories=System;Monitor;" >> $DIR/conky.desktop
   mkdir -p ~/.config/autostart/
-  cp ./conky.desktop ~/.config/autostart/
-  rm conky.desktop
+  cp $DIR/conky.desktop ~/.config/autostart/
+  rm $DIR/conky.desktop
   echo "Conky-lua-rings is now installed."
-  echo "Please run ~/.conky-lua-rings/startconky.sh to start."
+  echo "Please run $DIR/startconky.sh to start."
 fi
