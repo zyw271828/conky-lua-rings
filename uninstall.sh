@@ -3,7 +3,7 @@
 DIR=~/.conky-lua-rings
 
 if [ -d "$DIR" ]; then
-  rm -r $DIR
+  rm -rf $DIR
   rm ~/.config/autostart/conky.desktop
   echo "Conky-lua-rings is now removed."
   exit
