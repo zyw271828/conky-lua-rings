@@ -23,4 +23,5 @@ if [ ! -d "$DIR" ]; then
   cp ./conky.desktop ~/.config/autostart/
   rm conky.desktop
   echo "Conky-lua-rings is now installed."
+  echo "Please run ~/.conky-lua-rings/startconky.sh to start."
 fi
