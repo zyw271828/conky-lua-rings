@@ -59,4 +59,5 @@ ${voffset -70}${goto 278}${cpugraph 62,285 d5dcde ffffff}${voffset -18}
 ${voffset 30}${goto 287}${time %Y 年 %m 月 %d 日 %A}
 ${font "Noto Sans CJK SC":size=12}${voffset -180}${goto 335}BATTERY     ${battery BAT0}
 ${font "Noto Sans CJK SC":size=10}${goto 335}AC adapter: $acpiacadapter
+${voffset 90}
 ]];
